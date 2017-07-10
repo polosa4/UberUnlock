@@ -1,0 +1,102 @@
+﻿
+@model UberUnlock.ViewModel.MultipleModelInOneView
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-2">
+            @if (Model.Products.ProductImageMappings != null && Model.Products.ProductImageMappings.Any())
+            {
+                <dt></dt>
+                <dd>
+                    <img src="@(Url.Content(Constants.ProductImagePath) + Model.Products.ProductImageMappings.OrderBy(pim => pim.ImageNumber).ElementAt(0).ProductImage.FileName)" style="width:150px;height:150px;">
+                </dd>
+                <dt></dt>
+            }
+        </div>
+            <div class="col-md-5">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Products.Category.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Products.Category.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Products.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Products.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Products.Price)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Products.Price)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Products.Delivery)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Products.Delivery)
+                    </dd>
+                   
+                    <dt>
+                        @Html.LabelFor(model => model.Orders.IMEI, new { @class = "control-label margin" })@**@
+                    </dt>
+                    <dt>
+                        <div id="down">Quantity:</div>
+                    </dt>
+                    <dd>
+                        @using (Html.BeginForm("AddToBasket", "Basket", new {id = Model.Products.ID}))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+                            @Html.HiddenFor(model => model.Products.ID)
+                            
+                            @Html.EditorFor(model => model.Orders.IMEI, new { htmlAttributes = new { @class = "form-control margin"} })
+                            
+
+
+                            @Html.DropDownList("quantity", Enumerable.Range(1, 10).Select(i => new SelectListItem { Text = i.ToString(), Value = i.ToString() }))
+                            <input type="submit" class="btn btn-primary btn-default margin" value="Add to Basket">
+                            <br/>
+                            @Html.ValidationMessageFor(model => model.Orders.IMEI, "", new { @class = "text-danger" })
+                        }
+                    </dd>
+                    @*<dt>
+
+            </dt>*@
+                    @*<dd>
+
+            </dd>*@
+
+                </dl>
+
+            </div>
+        
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Products.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<script src='@Url.Content("~/Scripts/jquery-3.1.1.js")' type='text/javascript'></script>    
+<script src='@Url.Content("~/Scripts/jquery.validate.js")' type='text/javascript'>         </script>
+<script src='@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")' type='text/javascript'></script>

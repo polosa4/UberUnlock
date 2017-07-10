@@ -1,0 +1,175 @@
+﻿body {
+}
+
+#text-white {
+    color: black;
+    background-color: #f8f8f8;
+    margin-bottom: 50px;
+    
+}
+
+#nav-custom-color {
+    background-color: #222222;
+    color: white!important;
+    
+}
+
+#nav-custom-color > li > a{
+    border-bottom: none;
+    color: white!important;
+}
+
+#nav-custom-color > li > a:hover{
+    
+    background-color:rgba(255, 255, 255, 0.2);
+    border: none;
+}
+#nav-custom-color > li > a:focus{
+    
+    background-color:rgba(255, 255, 255, 0.2);
+}
+.brands-main {
+    width: 100%;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 12px 0px 5px 0px;
+    text-decoration: none !important;
+    margin-bottom: 15px;
+}
+.welcome-style {
+    color: white!important;
+    font-size: 15px;
+}
+.margin {
+    margin-top: 5px;
+}
+#down {
+    padding-top: 16px!important;
+}
+.fixed-size {
+    width: 110px;
+}
+.new-size {
+    width: 280px;
+}
+.navbar-brand {
+
+    padding: -25px -15px!important;
+   
+}
+.example1 .navbar-brand {
+    height: 60px;
+    padding-top: 30px
+}
+
+.example2 .nav >li >a {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+.example3 .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+.example2 .navbar-brand>img{
+    margin-top: -10px;
+    
+    
+}
+.navbar {
+    border: none;
+    margin-bottom: -20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.phone-heading {
+    margin-top: 20px;
+    font-family: 'HelveticaNeueThin', Helvetica;
+    font-size: 40px;
+    line-height: 65px; 
+}
+.heading-small {
+    margin-top: 40px;
+}
+.heading-space {
+    margin-top: 20px;
+}
+.strong {
+    font-family: 'HelveticaNeueBold', Helvetica, sans-serif;
+}
+
+.basket-position {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 80px;
+    
+}
+
+.phone-background {
+    /*background-image: ; 
+    background-repeat: no-repeat;
+    background-position: center;*/
+    width: 290px;
+    height: 260px;
+    left: 9px;
+    background: url(iphone_logo_cropped.png) bottom no-repeat;
+    position: relative;
+}
+
+.glyphicon.glyphicon-shopping-cart {
+    font-size: 75px;
+}
+.basket-number {
+    font-size: 20px;
+    position: absolute!important;
+    left: 125px;
+    top: 7px;
+}
+
+.price-style >a {
+    color: black;
+    font-size: 15px;
+}
+
+.price-style >a:hover {
+    text-decoration: none;
+    
+}
+.bottom-style {
+    color: white;
+    background-color: #666666;
+    height: 200px;
+}
+.text-style {
+    
+    color: #d8d8d8!important;
+    font-size: 15px;
+}
+.text-style .col-md-2 >a {
+    color: #d8d8d8!important;
+    font-size: 15px;
+}
+.bottom-style ul li a {
+    color: #d8d8d8;
+}
+.bottom-style ul {
+    list-style-type: none;
+    display: block;
+    padding: 20px;
+}
+.bottom-style ul li {
+    display: inline;
+    padding: 5px 10px 10px 10px; 
+    
+    
+}
+.checkbox input {
+    margin-left: 0px!important;
+}
+.copyright {
+    font-size: .8em;
+    margin-top: 70px;
+}

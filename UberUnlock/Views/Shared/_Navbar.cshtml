@@ -1,0 +1,18 @@
+﻿@{
+    var categories = (ViewData["Categories"] as IEnumerable<UberUnlock.Category>);
+}
+
+    <ul class="nav nav-tabs nav-justified" id="nav-custom-color">
+        @if (categories != null)
+        {
+            foreach (var item in categories)
+            {
+
+                <li class="nav-item">
+                    @Html.ActionLink(item.Name, "Index", "Products", new { category = item.Name }, null)
+                </li>
+
+            }
+        }
+    </ul>
+

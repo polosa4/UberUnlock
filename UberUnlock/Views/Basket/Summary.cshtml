@@ -1,0 +1,8 @@
+﻿@model UberUnlock.ViewModel.BasketSummaryViewModel
+
+<span class="basket-number"><b>@Model.NumberOfItems</b> item's</span><br/>
+<span class="glyphicon glyphicon-shopping-cart"></span><br/>
+<div class="price-style">
+        @Html.ActionLink("Subtotal: " + HttpUtility.HtmlDecode(Html.DisplayFor(model => Model.TotalCost).ToString()), "Index", "Basket")
+            
+</div>

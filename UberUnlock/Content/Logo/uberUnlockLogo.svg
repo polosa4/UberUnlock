@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 204 40" style="enable-background:new 0 0 204 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{font-family:'Bauhaus93';}
+	.st2{font-size:27.9928px;}
+	.st3{fill:#45A843;}
+	.st4{font-size:24.4937px;}
+</style>
+<g>
+	<g>
+		<path d="M13.4,40L5,40c-2.8,0-5-2.7-5-6L0.1,6c0-3.3,2.3-6,5.1-6l8.4,0c2.8,0,5,2.7,5,6l-0.1,28C18.5,37.3,16.2,40,13.4,40z
+			 M5.1,2C3.3,2,1.8,3.8,1.8,6L1.7,34c0,2.2,1.5,4,3.4,4l8.4,0c1.9,0,3.4-1.8,3.4-4l0.1-28c0-2.2-1.5-4-3.4-4L5.1,2z"/>
+		<rect x="8.8" y="0" transform="matrix(3.326438e-03 -1 1 3.326438e-03 1.7118 17.7371)" width="2" height="16"/>
+		<rect x="8.7" y="24" transform="matrix(3.326438e-03 -1 1 3.326438e-03 -22.3488 41.5627)" width="2" height="16"/>
+		<path d="M9.2,38c-0.9,0-1.7-0.9-1.7-2c0-1.1,0.8-2,1.7-2c0.9,0,1.7,0.9,1.7,2C10.9,37.1,10.2,38,9.2,38z M9.2,35
+			c-0.5,0-0.8,0.4-0.8,1s0.4,1,0.8,1c0.5,0,0.8-0.4,0.8-1C10.1,35.4,9.7,35,9.2,35z"/>
+		<path d="M12.3,5L6.4,5C6.2,5,6,4.8,6,4.5C6,4.2,6.2,4,6.4,4l5.9,0c0.2,0,0.4,0.2,0.4,0.5S12.5,5,12.3,5z"/>
+		<path d="M8.9,4.5"/>
+	</g>
+	<rect x="1.2" y="10.7" class="st0" width="165.8" height="29.2"/>
+	<text transform="matrix(0.9874 0 0 1 1.1972 29.3447)"><tspan x="0" y="0" class="st1 st2">UBER</tspan><tspan x="62.7" y="0" class="st3 st1 st2">UNLOCK</tspan><tspan x="165.2" y="0" class="st1 st4"> </tspan></text>
+	
+		<image style="overflow:visible;" width="512" height="512" xlink:href="../SIM-512.png"  transform="matrix(8.923113e-02 -2.417199e-02 2.417199e-02 8.923113e-02 156.039 3.3761)">
+	</image>
+</g>
+</svg>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+<div class="example2">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                    <img src="~/Content/urbanLogo_small.png" type="image/svg+xml">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("View All Products", "Index", "Products")</li>*@
+                </ul>
+                @using (Html.BeginForm("Index", "Products", FormMethod.Get, new {@class = "navbar-form navbar-left"}))
+                {
+                    <div class="form-group">
+                        @Html.TextBox("Search", null, new {@class = "form-control", @placeholder = "Search Products "})
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+                }
+                @Html.Partial("_LoginPartial")
+                
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 heading-space">
+            <div class="heading-small">
+                <span class="strong"><b>Over 2 694 342 customers</b></span> served since May 2010
+            </div>
+                <div class="phone-heading">
+                    <span class="strong"><b>UNLOCK</b></span> YOUR MOBILE PHONE FOR ANY NETWORK PROVIDER
+                </div>
+            </div>
+        <div class="col-md-3 text-center">
+            <div class="phone-background">
+                <div class="basket-position">
+                    @Html.Action("Summary", "Basket")
+                </div>
+            </div>
+           
+        </div>
+        </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div id="text-white">
+            @Html.Partial("_Navbar")
+        </div>
+    </div>
+</div>
+<div class="container body-content">
+    @RenderBody()
+    
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <footer>
+            <div class="bottom-style">
+                <div class="container text-center text-style">
+
+                    <ul>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Unlock instructions", "Instructions", "Home")</li>
+                        <li>@Html.ActionLink("My Account", "Contact", "Home")</li>
+                        @*<li><strong>UberUnlock </strong><br />
+                            8551 W Arnold Ave River Grove, IL 60171</li>*@
+                    </ul>
+                    <img src="~/Content/logo_footer.png"/>
+                    <p class="copyright">&copy; @DateTime.Now.Year UberUnlock - All sponsored products, company names, brand names, trademarks and logos are the property of their respective owners.</p>
+                    @*<div class="row">
+                        <div class="col-md-2 col-md-offset- text-center">
+                            @Html.ActionLink("Contact", "Contact", "Home")
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 text-center">
+                            @Html.ActionLink("Unlock instructions", "Instructions", "Home")
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 text-center">
+                            @Html.ActionLink("My Account", "Contact", "Home")
+                        </div>
+                        @*<div class="col-md-2 col-md-offset-1 text-left">
+                            <strong>UberUnlock </strong> 8551 W Arnold Ave River Grove, IL 60171
+                        </div>*@
+
+                </div>
+            </div>
+
+
+
+        </footer>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>
